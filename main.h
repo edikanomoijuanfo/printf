@@ -10,8 +10,8 @@ int (*checkspecifier(const char *))(va_list);
 
 /**
 * struct specifier - data type for specifiers
-* @c: character specifier
-* func: pointer to the character specifier
+* @ch: character specifier
+* @func: pointer to the character specifier
 */
 
 typedef struct specifier
