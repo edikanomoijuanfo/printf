@@ -19,8 +19,6 @@ int print_char(va_list args)
 	return (0);
 }
 
-
-
 /**
 * print_pc - to print '%, when call upon
 * @args: argument
@@ -33,8 +31,6 @@ int print_pc(va_list args)
 	write(1, "%", 1);
 	return (1);
 }
-
-
 
 /**
  * print_string - tp print string to the standard output when called upon
@@ -50,14 +46,12 @@ int print_string(va_list args)
 
 	str = va_arg(args, char *);
 	if (str == NULL)
-		return (-1);
-
+		return (-1);	
 	while (str[i])
 	{
 		count = write(1, &str[i], 1);
 		i = i + 1;
 	}
-
 	return (count);
 }
 

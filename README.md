@@ -1,1 +1,1 @@
-This is combine printf project by Edikan and Olalekan
+This is the printf project collaboratively done by Edikan and Olalekan
