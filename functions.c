@@ -60,3 +60,47 @@ int print_string(va_list args)
 
 	return (count);
 }
+
+
+
+
+
+
+
+
+
+int print_integer(va_list args)
+{	char buffer[20];
+	int i = 0, is_negative = 0;
+	int count = 0, int value;
+	num = va_arg(args, int);
+	if (num == 0)
+	{
+        value = write(1, '0', 1);
+        count += value;
+        return (count);
+        }
+
+	if (num < 0)
+	{
+		is_negative = 1;
+		num = -num;
+	}
+	while (num != 0)
+	{
+		buffer[i++] = num % 10 + '0';
+        	num /= 10;
+        }
+
+	if (is_negative)
+    	{
+		value = write(1, '-', 1);
+	}
+
+	while (i > 0)
+	{
+        value = write(1, &buffer[--i], 1);
+        count += value;
+        return count;
+	}
+
