@@ -14,7 +14,6 @@ int (*checkspecifier(const char *format))(va_list args)
 	{"%", print_pc},
 	{NULL, NULL},
 	};
-
 	for (i = 0; check[i].ch != NULL; i++)
 	{
 		if (*(check[i].ch) == *format)
