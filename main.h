@@ -23,6 +23,6 @@ typedef struct specifier
 int print_char(va_list);
 int print_string(va_list);
 int print_pc(va_list);
-
-
+int print_int(va_list);
+int print_dec(va_list);
 #endif
