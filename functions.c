@@ -34,7 +34,7 @@ int print_pc(va_list args)
 
 /**
  * print_string - to print string to the standard output when called upon
- * @args: the argument
+ * @args: the arguments
  * Return: Total count of string
  */
 
