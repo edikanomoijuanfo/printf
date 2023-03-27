@@ -20,13 +20,9 @@ typedef struct specifier
 	int (*func)(va_list);
 } specifier;
 
-
-
 int print_char(va_list);
 int print_string(va_list);
 int print_pc(va_list);
-
-
 
 
 #endif
