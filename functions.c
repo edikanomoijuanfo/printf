@@ -33,7 +33,7 @@ int print_pc(va_list args)
 }
 
 /**
- * print_string - tp print string to the standard output when called upon
+ * print_string - to print string to the standard output when called upon
  * @args: the argument
  * Return: Total count of string
  */
