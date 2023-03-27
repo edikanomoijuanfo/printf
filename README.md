@@ -1,1 +1,1 @@
-This is the printf project collaboratively done by Edikan and Olalekan
+This project is the printf project collaboratively done by Edikan and Olalekan
