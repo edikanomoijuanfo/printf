@@ -46,7 +46,7 @@ int print_string(va_list args)
 
 	str = va_arg(args, char *);
 	if (str == NULL)
-		return (-1);	
+		return (-1);
 	while (str[i])
 	{
 		count = write(1, &str[i], 1);
