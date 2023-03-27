@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _printf - function to print to te stnadard output
+ * _printf - function to print to the stnadard output
  * @format: foramt specifier
  * @...: arguments passed
  * Return: Return: total count of the output
@@ -24,7 +24,6 @@ int _printf(const char *format, ...)
 			i++;
 			continue;
 		}
-
 		if (format[i] == '%')
 		{
 			f = checkspecifier(&format[i + 1]);
@@ -35,7 +34,6 @@ int _printf(const char *format, ...)
 				i = i + 2;
 				continue;
 			}
-
 			if (format[i + 1] == '\0')
 			break;
 
