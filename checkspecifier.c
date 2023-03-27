@@ -12,8 +12,6 @@ int (*checkspecifier(const char *format))(va_list args)
 	{"c", print_char},
 	{"s", print_string},
 	{"%", print_pc},
-	{"i", print_int},
-	{"d", print_dec},
 	{NULL, NULL},
 	};
 	for (i = 0; check[i].ch != NULL; i++)
