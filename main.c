@@ -17,14 +17,14 @@ int main(void)
 	count2 = _printf("%s\n", "Olalekan");
 	count4 = printf("%s\n", "Olalekan");
 	printf("The total number of count2 is:%d\n", count4);
-	printf("The total number of count2 is:%d\n", count2);
+	printf("The total number of count4 is:%d\n", count2);
 	count3 = _printf("%%\n", '%');
 	count8 = printf("%%\n", '%');
 	printf("The total number of count3 is:%d\n", count3);
 	printf("The total number of count3 is:%d\n", count8);
-	count5 = _printf("Emmanuel\n");
-	count7 = printf("Emmanuel\n");
-	printf("The total number of count is:%d\n", count5);
-	printf("The total number of count is:%d\n", count7);
+	count5 = _printf("The boy is good\n");
+	count7 = printf("The boy is good\n");
+	printf("The total number of count5 is:%d\n", count5);
+	printf("The total number of count7 is:%d\n", count7);
 	return (0);
 }
