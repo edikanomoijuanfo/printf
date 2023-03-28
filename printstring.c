@@ -21,5 +21,5 @@ int print_string(va_list args)
 		count = write(1, &str[i], 1);
 		i = i + 1;
 	}
-	return (i);
+	return (count);
 }
