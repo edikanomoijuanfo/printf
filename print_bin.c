@@ -8,11 +8,11 @@
 int print_bin(va_list args)
 {	int i = 0;
 	int j;
-	int n;
+	unsigned int n;
 	int count = 0;
 	char bn[50];
 
-	n = va_arg(args, int);
+	n = va_arg(args, unsigned int);
 	if (n == 0)
 		return (_putchar('0'));
 	while (n > 0)

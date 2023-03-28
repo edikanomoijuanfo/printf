@@ -30,6 +30,8 @@ int main(void)
 
 	_printf("%i\n", 92);
 	_printf("%i\n", -98);
+	_printf("%d\n", 92);
+	_printf("%d\n", -98);
 
 	_printf("%b\n", 98);
 	return (0);
