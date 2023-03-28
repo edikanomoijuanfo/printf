@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdio.h>
-
+#include <limits.h>
 
 /**
 * main - To test the function
@@ -18,5 +18,6 @@ int main(void)
 	printf("The total number of count2 is:%d\n", count2);
 	count3 = _printf("%%\n", '%');
 	printf("The total number of count3 is:%d\n", count3);
+	printf("Emmanuel\n");
 	return (0);
 }
