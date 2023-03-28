@@ -13,7 +13,7 @@ int (*checkspecifier(const char *format))(va_list args)
 	{"s", print_string},
 	{"%", print_pc},
 	{"i", print_int},
-	{"i", print_int},
+	{"d", print_dec},
 	{"b", print_bin},
 	{NULL, NULL}
 	};
