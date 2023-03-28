@@ -11,6 +11,7 @@
 int main(void)
 {	int count1 = 0, count2 = 0, count3 = 0, count4 = 0, count5 = 0, count6 = 0,
 	count7 = 0, count8 = 0;
+	int num1, num2, num3, num4;
 	count1 = _printf("%c\n", 'F');
 	count6 = printf("%c\n", 'F');
 	printf("The total number of count1 is:%d\n", count1);
@@ -29,9 +30,16 @@ int main(void)
 	printf("The total number of count7 is:%d\n", count7);
 
 	_printf("%i\n", 92);
-	_printf("%i\n", -98);
-	_printf("%d\n", 92);
+	num2 = _printf("%i\n", -98);
+	num1 = printf("%i\n", -98);
+	printf("total count std : %i\n", num1);
+	printf("total handmade count : %i\n", num2);
+
+	num3 = _printf("%d\n", 92);
 	_printf("%d\n", -98);
+	num4 = printf("%d\n", 92);
+	printf("total count std : %d\n", num3);
+	_printf("total handmade count : %d\n", num4);
 
 	_printf("%b\n", 98);
 	return (0);

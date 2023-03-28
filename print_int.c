@@ -15,8 +15,8 @@ int print_int(va_list args)
 	n = va_arg(args, int);
 	if (n < 0)
 	{
-		k = n * -1;
 		count += _putchar('-');
+		k = n * -1;
 	}
 	else
 	k = n;
@@ -26,7 +26,7 @@ int print_int(va_list args)
 	}
 	for (; div != 0;)
 	{
-		count = _putchar('0' + k / div);
+		count += _putchar('0' + k / div);
 		k %= 10;
 		div /= 10;
 	}

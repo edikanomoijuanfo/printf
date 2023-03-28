@@ -20,13 +20,13 @@ int print_dec(va_list args)
 	}
 	else
 	k = n;
-	for (; k / div > 9; )
+	for (; k / div > 9;)
 	{
 		div *= 10;
 	}
 	for (; div != 0;)
 	{
-		count = _putchar('0' + k / div);
+		count += _putchar('0' + k / div);
 		k %= 10;
 		div /= 10;
 	}
