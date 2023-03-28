@@ -9,9 +9,11 @@
 */
 
 int print_pc(va_list args)
-{	(void)args;
+{	int count;
 
-	write(1, "%", 1);
-	return (1);
+	(void)args;
+
+	count = write(1, "%", 1);
+	return (count);
 }
 

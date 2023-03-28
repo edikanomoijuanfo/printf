@@ -9,15 +9,22 @@
 */
 
 int main(void)
-{	int count1 = 0, count2 = 0, count3 = 0, count4 = 0;
+{	int count1 = 0, count2 = 0, count3 = 0, count4 = 0, count5 = 0, count6 = 0, count7 = 0, count8 = 0;
 	count1 = _printf("%c\n", 'F');
+	count6 = printf("%c\n", 'F');
 	printf("The total number of count1 is:%d\n", count1);
+	printf("The total number of count6 is:%d\n", count6);
 	count2 = _printf("%s\n", "Olalekan");
 	count4 = printf("%s\n", "Olalekan");
 	printf("The total number of count2 is:%d\n", count4);
 	printf("The total number of count2 is:%d\n", count2);
 	count3 = _printf("%%\n", '%');
+	count8 = printf("%%\n", '%');
 	printf("The total number of count3 is:%d\n", count3);
-	printf("Emmanuel\n");
+	printf("The total number of count3 is:%d\n", count8);
+	count5 = _printf("Emmanuel\n");
+	count7 = printf("Emmanuel\n");
+	printf("The total number of count is:%d\n", count5);
+	printf("The total number of count is:%d\n", count7);
 	return (0);
 }
