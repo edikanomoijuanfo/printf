@@ -27,5 +27,10 @@ int main(void)
 	count7 = printf("The boy is good\n");
 	printf("The total number of count5 is:%d\n", count5);
 	printf("The total number of count7 is:%d\n", count7);
+
+	_printf("%i\n", 92);
+	_printf("%i\n", -98);
+
+	_printf("%b\n", 98);
 	return (0);
 }
