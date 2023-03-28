@@ -7,28 +7,30 @@
 */
 
 int print_int(va_list args)
-{	unsigned int k;
-	int n;
+{	int n;
 	int count = 0;
+	char digit;
 	int div = 1;
 
 	n = va_arg(args, int);
 	if (n < 0)
 	{
-		count += _putchar('-');
-		k = n * -1;
+		n = -n;
+		_putchar('-');
+		count++;
 	}
-	else
-	k = n;
-	for (; k / div > 9; )
+	while (n / div >= 10)
 	{
 		div *= 10;
 	}
-	for (; div != 0;)
+	while (div != 0)
 	{
-		count += _putchar('0' + k / div);
-		k %= 10;
+		digit = (char)((n / div) + '0');
+		_putchar(digit);
+		count++;
+		n %= div;
 		div /= 10;
 	}
 	return (count);
-}
+} 
+
