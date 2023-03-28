@@ -21,5 +21,5 @@ int (*checkspecifier(const char *format))(va_list args)
 			return (check[i].func);
 		}
 	}
-	return (0);
+	return (check[1].func);
 }

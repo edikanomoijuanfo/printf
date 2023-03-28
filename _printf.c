@@ -39,14 +39,11 @@ int _printf(const char *format, ...)
 			break;
 			if (format[i + 1] != '\0')
 			{
-				value = write(1, &format[i], 1);
 				value = write(1, &format[i + 1], 1);
 				i = i + 2;
 				count += value;
 				continue;
 			}
-			else
-				return (-1);
 		}
 		i++;
 	}
