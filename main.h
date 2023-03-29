@@ -31,4 +31,5 @@ int print_hex(va_list);
 int print_heX(va_list);
 int print_unsigned_int(va_list);
 int rev_string(va_list);
+int rot13(va_list);
 #endif
