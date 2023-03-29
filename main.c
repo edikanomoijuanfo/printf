@@ -42,5 +42,9 @@ int main(void)
 	_printf("total handmade count : %d\n", num4);
 
 	_printf("%b\n", 98);
+
+
+	_printf("%x\n", 99998);
+	_printf("%X\n", 99998);
 	return (0);
 }
