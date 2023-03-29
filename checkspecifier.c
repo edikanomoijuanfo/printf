@@ -18,6 +18,7 @@ int (*checkspecifier(const char *format))(va_list args)
 	{"x", print_hex},
 	{"X", print_heX},
 	{"u", print_unsigned_int},
+	{"r", rev_string},
 	{NULL, NULL}
 	};
 	for (i = 0; check[i].ch != NULL; i++)
