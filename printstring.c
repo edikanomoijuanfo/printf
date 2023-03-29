@@ -1,10 +1,9 @@
 #include "main.h"
 
-
 /**
  * print_string - to print string to the standard output when called upon
  * @args: the arguments
- * Return: Total count of string
+ * Return: Total counts of string
  */
 
 int print_string(va_list args)
