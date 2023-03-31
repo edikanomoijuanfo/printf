@@ -7,23 +7,22 @@
 */
 
 int rev_string(va_list args)
-{	int l, i, k;
+{	int count = 0;
 	char *s;
-
-	l = 0;
-	i = 0;
-	char j;
+	int i;
 
 	s = va_arg(args, char *);
 	if (s == NULL)
 		return (-1);
-	while (s[i++])
-	l++;
-
-	for (k	= l - 1; k >= 0; k--)
+	while (*(s + count) != '\0')
 	{
-		_putchar(s[k]);
+		count++;
 	}
-	return (l);
+	for (i = count - 1; i >= 0; i--)
+	{
+	_putchar(*(s + i));
+	}
+
+	return (count);
 
 }
