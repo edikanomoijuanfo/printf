@@ -46,5 +46,46 @@ int main(void)
 
 	_printf("%x\n", 99998);
 	_printf("%X\n", 99998);
+
+
+
+
+
+
+	_printf("%R", "Guvf fragrapr vf ergevrirq sebz in_netf!\n");
+	_printf("Complete the sentence: You %R nothing, Jon Snow.\n", "xabj");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	return (0);
 }

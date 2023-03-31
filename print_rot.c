@@ -2,7 +2,7 @@
 
 /**
 * rot13 - To encode sting using rot13
-* @str: pointer to te string
+* @args: pointer to te string
 * Return: count to the rot 13 value of the string
 */
 
@@ -14,16 +14,21 @@ int rot13(va_list args)
 	char s2[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
 	str = va_arg(args, char *);
+	if (str == NULL)
+		return (-1);
+
 	for (i = 0; str[i] != '\0'; i++)
 	{
-	for (j = 0; j < 52; j++)
+	for (j = 0; j <= 52; j++)
 	{
 	if (str[i] == s1[j])
 	{
-	str[i] = s2[j];
+	_putchar(s2[j]);
 	break;
 	}
 	}
+	if (j == 53)
+		_putchar(str[i]);
 	}
 	return (i);
 }
