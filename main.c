@@ -57,7 +57,7 @@ int main(void)
 
 
 
-
+	_printf("%r", "\nThis sentence is retrieved from va_args!");
 
 
 

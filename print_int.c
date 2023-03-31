@@ -32,5 +32,5 @@ int print_int(va_list args)
 		div /= 10;
 	}
 	return (count);
-} 
+}
 

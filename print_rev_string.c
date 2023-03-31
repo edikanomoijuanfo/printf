@@ -13,6 +13,9 @@ int rev_string(va_list args)
 	i = 0;
 
 	s = va_arg(args, char *);
+	if (s == NULL)
+		return (-1);
+	
 	while (s[i++])
 	l++;
 
