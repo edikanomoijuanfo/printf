@@ -2,29 +2,27 @@
 
 /**
 * rev_string - To print string in reverse
-* @s: The variable to print from
+* @args: The variable to print from
 * Return: print string in reverse
 */
 
 int rev_string(va_list args)
-{	int l, i;
+{	int l, i, k;
 	char *s;
+
 	l = 0;
 	i = 0;
+	char j;
 
 	s = va_arg(args, char *);
 	if (s == NULL)
 		return (-1);
-	
 	while (s[i++])
 	l++;
 
-	for (i	= l - 1; i >= l / 2; i--)
+	for (k	= l - 1; k >= 0; k--)
 	{
-	char j = s[i];
-
-	s[i] = s[l - i - 1];
-	s[l - i - 1] = j;
+		_putchar(s[k]);
 	}
 	return (l);
 
