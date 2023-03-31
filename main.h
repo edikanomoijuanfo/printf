@@ -28,6 +28,7 @@ int print_dec(va_list);
 int _putchar(char c);
 int print_bin(va_list);
 int print_hex(va_list);
+int print_pointer(va_list);
 int print_heX(va_list);
 int print_unsigned_int(va_list);
 int rev_string(va_list);
